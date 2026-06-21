@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Home on Sendo</title>
-		<link>http://localhost:1313/</link>
-		<description>Recent content in Home on Sendo</description>
+		<title>College on Sendo</title>
+		<link>http://localhost:1313/tags/college/</link>
+		<description>Recent content in College on Sendo</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,20 +12,13 @@
 		
 			<lastBuildDate>Sun, 21 Jun 2026 19:49:00 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/college/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Anamnesis - A Reminder</title>
 				<link>http://localhost:1313/blogs/2026-06-21-anamnesis-a-reminder/</link>
 				<pubDate>Sun, 21 Jun 2026 19:49:00 +0800</pubDate>
 				<guid>http://localhost:1313/blogs/2026-06-21-anamnesis-a-reminder/</guid>
 				<description>&lt;h2 id=&#34;what-made-me-build-this&#34;&gt;What made me build this&lt;/h2&gt;&#xA;&lt;p&gt;Lately, I&amp;rsquo;ve been feeling pretty dispassionate on life. IDK lang talaga if it&amp;rsquo;s just a really boring staycation sa bahay but I remember I would spend &lt;strong&gt;hours and hours&lt;/strong&gt; of my time to game instead of finishing my &lt;em&gt;Xiao Kai&lt;/em&gt; (Homework from HuaSiong)&lt;span style=&#34;font-size: 10px;&#34;&gt;&lt;sup&gt; i dont miss you  TnT&lt;sup&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;I barely spend 30 mins playing these days and just press the exit button. I think i&amp;rsquo;m just growing up if ganon, hard to believe &lt;strong&gt;AND&lt;/strong&gt; accept it tho especially when I think my mental capacity is that of my 18 year old self.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title></title>
-				<link>http://localhost:1313/about/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/about/</guid>
-				<description>&lt;h2 id=&#34;this-is-the-about-page&#34;&gt;This is the &lt;em&gt;About&lt;/em&gt; Page &lt;br&gt;&lt;/h2&gt;</description>
 			</item>
 	</channel>
 </rss>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anamnesis - A Reminder | Sendo</title>
+<meta name="description" content="What made me build this
+Lately, I&rsquo;ve been feeling pretty dispassionate on life. IDK lang talaga if it&rsquo;s just a really boring staycation sa bahay but I remember I would spend hours and hours of my time to game instead of finishing my Xiao Kai (Homework from HuaSiong) i dont miss you  TnT
+I barely spend 30 mins playing these days and just press the exit button. I think i&rsquo;m just growing up if ganon, hard to believe AND accept it tho especially when I think my mental capacity is that of my 18 year old self.">
+
+<link rel="stylesheet" href="/css/fonts.css">
+
+
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/color.css">
+<link rel="stylesheet" href="/css/typography.css">
+<link rel="stylesheet" href="/css/layout.css">
+
+<script>
+  
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  })();
+  if (theme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+</script>
+
+<script defer src="/js/theme-toggle.js"></script>
+
+</head>
+<body>
+  <page-grid>
+    <page-header>
+      <page-nav>
+        <aside data-bar>
+    <sidebar-inner>
+      <a href="/" aria-label="Sendo" style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500; text-decoration: none;">
+          
+           
+          <img src="/anamnesis.svg" width="32" height="32" alt="Sendo" style="width: 32px; height: 32px;">
+        <span>Anamnesis</span>
+      </a>
+      <nav style="margin-top: 1.5rem;">
+        <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+          
+          
+            <li>
+              <a href="/blogs/" 
+                 
+                 style="display: block; color: var(--muted-foreground); text-decoration: none;">
+                Blogs
+              </a>
+            </li>
+          
+            <li>
+              <a href="/projects/" 
+                 
+                 style="display: block; color: var(--muted-foreground); text-decoration: none;">
+                Projects
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about/" 
+                 
+                 style="display: block; color: var(--muted-foreground); text-decoration: none;">
+                About
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </sidebar-inner>
+    <sidebar-toggle style="display: flex; align-items: center; margin-top: auto; padding-top: 2rem;">
+      <button class="theme-toggle" data-icon-button aria-label="Toggle theme" style="display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 4px; cursor: pointer; border: none; background: transparent;">
+        
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </sidebar-toggle>
+</aside>
+
+<style>
+  aside[data-bar] {
+    position: sticky;
+    top: var(--page-offset-top);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100svh - var(--page-offset-top) - var(--page-offset-bottom));
+  }
+  @media (width < 64rem) {
+    aside[data-bar] {
+      position: static;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      gap: var(--space-s);
+      padding-block: var(--space-2xs);
+      padding-inline: var(--grid-gutter);
+      border-bottom: 1px solid var(--border);
+      background-color: color-mix(in oklab, var(--background) 90%, transparent);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+    aside[data-bar] sidebar-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    aside[data-bar] nav {
+        margin-top: 0 !important;
+    }
+    aside[data-bar] nav ul {
+      flex-direction: row !important;
+      gap: 1rem !important;
+    }
+    aside[data-bar] sidebar-toggle {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+  }
+
+  nav ul a:hover,
+  nav ul a[aria-current="page"] {
+    color: var(--foreground) !important;
+  }
+
+  html[data-theme="dark"] .icon-moon {
+    display: none;
+  }
+  html[data-theme="light"] .icon-moon {
+      display: block;
+  }
+</style>
+
+<style>
+    .theme-toggle::after {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>');
+        display: none;
+        width: 16px;
+        height: 16px;
+    }
+    html[data-theme="dark"] .theme-toggle::after {
+        display: block;
+    }
+    html[data-theme="light"] .theme-toggle::after {
+        display: none;
+    }
+    .theme-toggle:hover {
+        background-color: var(--muted) !important;
+    }
+</style>
+
+      </page-nav>
+      
+        <page-toc>
+          <nav class="erudite-toc" aria-label="Table of contents">
+  <div class="toc-title-desktop">Table of Contents</div>
+  <label class="toc-dropdown-toggle">
+    <input type="checkbox" id="toc-toggle" aria-label="Toggle table of contents">
+    <svg viewBox="0 0 16 16" aria-hidden="true" class="progress-ring">
+      <circle cx="8" cy="8" r="6.5" />
+      <circle cx="8" cy="8" r="6.5" transform="rotate(-90 8 8)" class="progress-circle" />
+    </svg>
+    <toc-current>Anamnesis - A Reminder</toc-current>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </label>
+  <div class="toc-menu">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-made-me-build-this">What made me build this</a></li>
+    <li><a href="#my-approach-on-blogs">My approach on blogs</a></li>
+    <li><a href="#tech-stack">Tech Stack</a></li>
+    <li><a href="#choosing-a-theme-nightmare-fuel">Choosing a theme (Nightmare Fuel)</a></li>
+    <li><a href="#mission-import-to-hugo">Mission: Import to Hugo</a></li>
+    <li><a href="#current-status">Current Status</a></li>
+  </ul>
+</nav>
+  </div>
+</nav>
+
+<style>
+  .erudite-toc {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--step--1);
+  }
+
+  .toc-title-desktop {
+    display: none;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--foreground);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+
+  .toc-dropdown-toggle {
+    display: none;
+  }
+
+  .toc-menu {
+    max-height: calc(100svh - var(--page-offset-top) - var(--page-offset-bottom));
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .toc-menu::-webkit-scrollbar { display: none; }
+
+   
+  @media (max-width: 63.99rem) {
+    .toc-dropdown-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      padding-block: 0.75rem;
+      padding-inline: var(--grid-gutter);
+      border-bottom: 1px solid var(--border);
+      background-color: color-mix(in oklab, var(--background) 90%, transparent);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+    .toc-dropdown-toggle input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .progress-ring {
+      width: 1em; height: 1em; flex-shrink: 0;
+    }
+    .progress-ring circle {
+      fill: none; stroke: var(--border); stroke-width: 2;
+    }
+    .progress-ring .progress-circle {
+      stroke: var(--muted-foreground);
+      stroke-dasharray: 40.8407;  
+      stroke-dashoffset: 40.8407;
+      transition: stroke-dashoffset 0.1s;
+    }
+
+    toc-current {
+      flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      color: var(--muted-foreground); font-size: 0.875rem;
+    }
+
+    .chevron {
+      width: 1em; height: 1em; flex-shrink: 0; color: var(--muted-foreground);
+      transition: transform 0.2s;
+    }
+
+    .erudite-toc:has(input:checked) .chevron {
+      transform: rotate(180deg);
+    }
+
+    .toc-menu {
+      display: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+      padding-inline: var(--grid-gutter);
+      background-color: color-mix(in oklab, var(--background) 90%, transparent);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+    .erudite-toc:has(input:checked) .toc-menu {
+      display: block;
+    }
+  }
+
+   
+  @media (min-width: 64rem) {
+    .erudite-toc {
+      position: sticky;
+      top: var(--page-offset-top);
+    }
+    .toc-title-desktop { display: block; }
+  }
+
+   
+  #TableOfContents ul {
+    list-style: none; padding-left: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  #TableOfContents > ul { padding-left: 0; }
+  #TableOfContents ul ul { padding-left: 1rem; margin-top: 0.5rem; border-left: 1px solid var(--border); margin-left: 0.25rem; }
+  #TableOfContents a { color: var(--muted-foreground); text-decoration: none; }
+  #TableOfContents a:hover, #TableOfContents a.active { color: var(--foreground); }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const defaultTitle = "Anamnesis - A Reminder";
+    const tocCurrent = document.querySelector('toc-current');
+    const progressCircle = document.querySelector('.progress-circle');
+    const links = document.querySelectorAll('#TableOfContents a');
+    
+    
+    const sections = Array.from(links).map(link => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        return document.getElementById(href.substring(1));
+      }
+      return null;
+    }).filter(Boolean);
+
+    function onScroll() {
+      
+      if (progressCircle) {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
+        const circumference = 40.8407;
+        progressCircle.style.strokeDashoffset = String(circumference - (scrollPercent * circumference));
+      }
+
+      
+      let currentSection = null;
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        
+        if (rect.top <= window.innerHeight / 3) {
+          currentSection = section;
+        }
+      });
+
+      links.forEach(link => link.classList.remove('active'));
+
+      if (currentSection) {
+        const id = currentSection.getAttribute('id');
+        const activeLink = document.querySelector(`#TableOfContents a[href="#${id}"]`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+          if (tocCurrent) tocCurrent.textContent = activeLink.textContent;
+        }
+      } else {
+        if (tocCurrent) tocCurrent.textContent = defaultTitle;
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); 
+  });
+</script>
+
+        </page-toc>
+      
+    </page-header>
+    <page-content>
+      <main>
+        
+<article style="max-width: var(--measure);">
+    <header style="margin-bottom: 2rem;">
+        <h1 style="font-size: var(--step-3); font-weight: var(--font-weight-medium, 450); margin-bottom: 1rem; line-height: calc(var(--leading-offset) + 1em);">Anamnesis - A Reminder</h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; font-size: 0.875rem; color: var(--muted-foreground); margin-top: 0.5rem; font-family: var(--font-mono);">
+            
+                <div style="display: flex; align-items: center; gap: 0.375rem;">
+                    
+                        <img src="https://github.com/ghost.png" alt="R. Sendo" width="18" height="18" style="border-radius: 50%; box-shadow: 0 0 0 1.5px var(--background);">
+                    
+                    
+                        <span style="color: var(--foreground);">R. Sendo</span>
+                    
+                </div>
+            
+            <span>&bull;</span>
+            <time datetime="2026-06-21">Jun 21, 2026</time>
+            
+                <span>&bull;</span>
+                <div style="display: flex; gap: 0.375rem; flex-wrap: wrap; margin-left: 0.125rem;">
+                    
+                        <a href="/tags/summer" style="color: color-mix(in oklab, var(--muted-foreground) 50%, transparent); text-decoration: none;">#summer</a>
+                    
+                        <a href="/tags/college" style="color: color-mix(in oklab, var(--muted-foreground) 50%, transparent); text-decoration: none;">#college</a>
+                    
+                        <a href="/tags/development" style="color: color-mix(in oklab, var(--muted-foreground) 50%, transparent); text-decoration: none;">#development</a>
+                    
+                        <a href="/tags/life" style="color: color-mix(in oklab, var(--muted-foreground) 50%, transparent); text-decoration: none;">#life</a>
+                    
+                </div>
+            
+        </div>
+        <style>
+            .single-header a:hover { color: var(--foreground) !important; }
+        </style>
+        
+            <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--muted-foreground); line-height: 1.6;">I never thought I’d actually set up *a* blog, but here we are. This is how I brought a completely different SSG theme over to Hugo—and the moments I almost gave up entirely.</p>
+        
+    </header>
+
+    
+
+    <div class="prose">
+        <h2 id="what-made-me-build-this">What made me build this</h2>
+<p>Lately, I&rsquo;ve been feeling pretty dispassionate on life. IDK lang talaga if it&rsquo;s just a really boring staycation sa bahay but I remember I would spend <strong>hours and hours</strong> of my time to game instead of finishing my <em>Xiao Kai</em> (Homework from HuaSiong)<span style="font-size: 10px;"><sup> i dont miss you  TnT<sup></span></p>
+<p>I barely spend 30 mins playing these days and just press the exit button. I think i&rsquo;m just growing up if ganon, hard to believe <strong>AND</strong> accept it tho especially when I think my mental capacity is that of my 18 year old self.</p>
+<p>Kaya siguro napa-isip ako this early morning to build up a blog. Not just to pass time or get experience but rather exercise my brain and my soul. I&rsquo;ve always been a forgetful person as well. I was always astonished by the events from what I used to do and the things that were happening around me nung highschool when the people who I used to be friends with reminded me TnT. I barely remember anything past-pandemic nor where my fave socks were recently placed<span style="font-size: 10px;"><sup> i swear my just sister lost it<sup></span></p>
+<hr>
+<h2 id="my-approach-on-blogs">My approach on blogs</h2>
+<p>I thought I would never program a blog myself if there were plenty of platforms where it&rsquo;s easy to setup and most importantly of all free. I began searching muna for existing platforms or see the ones my senior shared on his post if they were sufficient enough for me. I could&rsquo;ve written this down hours ago if it weren&rsquo;t for my weakness for <strong>lack of features.</strong></p>
+<p>Some free blogs I found insteresting were:</p>
+<ol>
+<li><a href="https://bearblog.dev">Bear Blog</a></li>
+<li><a href="https://write.as">Write.as</a></li>
+<li><a href="https://pika.page">Pika</a></li>
+</ol>
+<p>I would&rsquo;ve wrote on Pika if it weren&rsquo;t for the 50 blog limit on the free plan TnT. Regardless, the others really didn&rsquo;t connect to me—and that&rsquo;s when I realized I wanted to customize my own blog. I really didn&rsquo;t wanna look at an interface na hindi ko bet especially if I&rsquo;m gonna commit a long time of doing this. With that on my mind, I started my research earlier this morning.</p>
+<hr>
+<h2 id="tech-stack">Tech Stack</h2>
+<p>One of my favourite parts of being in this industry is system design, system architecture, and discovering new frameworks. I always love that each language and framework has their ups and downs on their fields especially when you&rsquo;ve been experiencing so many downs on one thing so when you finally have the opportunity to try the new thing it feels like heaven to not experience those.</p>
+<p>After a bit of research this is what I was going to choose:</p>
+<table>
+	<thead>
+			<tr>
+					<th><strong>SSGs</strong></th>
+					<th><strong>Language</strong></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>11ty</td>
+					<td>Node.js</td>
+			</tr>
+			<tr>
+					<td>Astro</td>
+					<td>Node.js / TypeScript</td>
+			</tr>
+			<tr>
+					<td>Hugo</td>
+					<td>Go</td>
+			</tr>
+			<tr>
+					<td>Zola</td>
+					<td>Rust</td>
+			</tr>
+			<tr>
+					<td>Jekyll</td>
+					<td>Ruby</td>
+			</tr>
+	</tbody>
+</table>
+<p><br>
+I really wanted to go to <strong>Jekyll</strong> due to their longevity and community support but idk shi about ruby and I don&rsquo;t really see myself coding <strong>ruby</strong> in anytime of the future. It felt like no choice between <strong>Eleventy (11ty)</strong> and <strong>Astro</strong> because I had most experience in these languages. I really wanted to try <strong>Zola</strong> because of rust but because of the amazing speeds I heard about <strong>Go</strong>, I went building this site with <strong>Hugo</strong>.<br>
+<br>
+I mean <strong>LOOK</strong> at this:<span style="font-size: 10px;"><sup> Next.js could never<sup></span></p>
+<p><img src="/images/Hugo_IMG.png" alt="Hugo_IMG" title="19ms build speed."></p>
+<p>I also chose to go with a CMS (Content Management System) called <strong>Decap</strong><span style="font-size: 10px;"><sup> i wish I hadn&rsquo;t<sup></span>, Basically a free software that allows you to do CRUD Operations without prior programming skills (Hence why no backend) It allows me to push, edit, and remove markdown files as long as the service is connected with my Github&rsquo;s Personal Access Token. I mean it&rsquo;s good as I learn to navigate it, I just wish more customizations TnT.</p>
+<hr>
+<h2 id="choosing-a-theme-nightmare-fuel">Choosing a theme (Nightmare Fuel)</h2>
+<p>This is where the process took the longest. In order to speed up development time and setup. These <strong>SSGs</strong> comes with a lot of free <a href="https://themes.gohugo.io">themes made by the community.</a> Usually they&rsquo;re built for making blogs such as mine but there are also themes made for portfolio websites with blogs integrated (Useful if you don&rsquo;t wanna design a portfolio site).</p>
+<p>I eventually stumbled upon a reddit comment a year ago from a dev called <em>merox.</em> Now I really liked the theme of his site.<br>
+<br>
+For reference:</p>
+<p><img src="/images/merox_IMG.png" alt="merox_IMG" title="merox's blog site"></p>
+<p>For me that was the perfect balance of darkness and light with the perfect design of UI/UX for me personally. So naturally I tried to find what he had so I could copy it. The comment I mentioned earlier stated that he used Hugo + a theme called Blowfish (which ofc doesn&rsquo;t look like the theme he had). It&rsquo;s understandable given the comment was a year ago, maybe he changed.<br>
+<br>
+I found that he replied to a comment that he had switched to Jellky + Chirpy Theme. Ah linto, abi ko amo na to. Colors and UI placement were similar so I had thought na he had to heavily customized the theme to tailor to his current web design. I was happy pa kay I found there was a Chirpy theme built for Hugo, I could just customize my shi to look like his shi.<br>
+<br>
+But I didn&rsquo;t wanna do allat. So i thought na maybe may kaparehos man nga theme, same placements, colors, simplicity&hellip;.WALA. I then saw on another thread that he decided to go with another SSGs which is <strong>Astro&hellip;</strong> (≖_≖ )<br>
+<br>
+The theme he used <a href="https://astro-erudite.vercel.app/">astro-erudite</a> by jktrn was the one I was looking for tho. It was incompatible with my SSGs, but because I really liked the theme&hellip;</p>
+<hr>
+<h2 id="mission-import-to-hugo">Mission: Import to Hugo</h2>
+<p>I wanted to import it to Hugo! I really thought na importing a theme by myself was impossible, especially when these theme repos get a lot of contribution per day. It didn&rsquo;t help to think about importing a theme from another SSG because I figured if a theme was popular enough, someone would have already made a copy of it for other SSGs anyway. <br>
+<br>
+Looking back I was stupid to overthinks things when I should&rsquo;ve read the documentation and code structure first&hellip;SSGs Themes are nothing but are just reusable templates built from semantic HTML, stylesheets (CSS), and Markdown content&hellip;٩(ˋᗣˊ*)و</p>
+<p>So I made sure to copy the structure and css style of the theme I wanted and by I, I mean <strong>Antigravity</strong> and Me. There&rsquo;s just no way I would read thousands of tailwind css just to convert them back to semantic css. So he took care of that and I just added the little things that I wanted. When everything was working correctly (Responsiveness and such) I edited the homepage a little different because I wanted my profile to be the center of the website rather than on the side.</p>
+<hr>
+<h2 id="current-status">Current Status</h2>
+<p>As I&rsquo;m writing this, I genuinely enjoyed through this process&hellip;<strong>Decap</strong> is still annoying me but I&rsquo;m getting used to it (Might change CSM soon tho). The only thing I have left to do to really publish my blog is to deploy it into <strong>Cloudflare Pages</strong> (Underrated tbh,  I don&rsquo;t see much talk about it dito). Maybe my passion for gaming has gone or not&hellip;but one thing I&rsquo;m sure though is that we mustn&rsquo;t be disarmed by the things we used to love. Sometimes the spark doesn&rsquo;t die, it just needs to be set aside for a while. We shouldn&rsquo;t feel guilty for outgrowing a phase or simply needing a break. Hell, I always thought people who wrote blogs were just bots (fr), yet here I am on my 4th hour writing this. There&rsquo;s still a lot of things I need to learn down my career, but I&rsquo;m thankful to God for letting me go through with this. I really thought I would give up at the first paragraph. <br>
+<br>
+To me, <strong>Anamnesis</strong> represents a profound chapter. It serves as much more than a simple log to document my life&rsquo;s journey; it is a vital, grounding tool designed to help me navigate the pieces of my mind that slip away. Well that or my rant library. I might post more here of my past experiences whether it&rsquo;d be hackathons, life, or college. <br>
+<br>
+I&rsquo;ll end this blog for now, baka akig na ung boss ko sakin sa game dev namin. („• ֊ •„)੭</p>
+<div style="text-align: right;">
+Sincerely,
+<br>
+<br>
+Me
+</div>
+
+    </div>
+</article>
+
+      </main>
+      <page-footer>
+        <footer style="display: flex; justify-content: space-between; align-items: center; color: var(--muted-foreground); font-size: 0.875rem; padding-bottom: 2rem;">
+    <div>
+        &copy; 2026 R. Sendo
+    </div>
+    <div style="display: flex; gap: 1rem; align-items: center;">
+        
+            <a href="https://github.com/Fabshkiee" aria-label="GitHub" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A4.8 4.8 0 0 0 8 18v4"/><path d="m9 18c-4.51 2-5-2-7-2"/></svg>
+                
+            </a>
+        
+            <a href="https://linkedin.com/in/Fabshkiee" aria-label="LinkedIn" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                
+            </a>
+        
+    </div>
+</footer>
+
+      </page-footer>
+    </page-content>
+  </page-grid>
+</body>
+</html>

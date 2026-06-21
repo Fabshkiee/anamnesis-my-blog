@@ -54,7 +54,7 @@ I really wanted to go to **Jekyll** due to their longevity and community support
 \
 I mean **LOOK** at this:<span style="font-size: 10px;"><sup> Next.js could never<sup></span>
 
-![Hugo_IMG](https://imgur.com/a/lgFdz2w "19ms build speed.")
+![Hugo_IMG](/images/Hugo_IMG.png "19ms build speed.")
 
 I also chose to go with a CMS (Content Management System) called **Decap**<span style="font-size: 10px;"><sup> i wish I hadn't<sup></span>, Basically a free software that allows you to do CRUD Operations without prior programming skills (Hence why no backend) It allows me to push, edit, and remove markdown files as long as the service is connected with my Github's Personal Access Token. I mean it's good as I learn to navigate it, I just wish more customizations TnT.
 
@@ -68,7 +68,7 @@ I eventually stumbled upon a reddit comment a year ago from a dev called *merox.
 \
 For reference:
 
-![merox_IMG](https://imgur.com/7zVKWUm "merox's blog site")
+![merox_IMG](/images/merox_IMG.png "merox's blog site")
 
 For me that was the perfect balance of darkness and light with the perfect design of UI/UX for me personally. So naturally I tried to find what he had so I could copy it. The comment I mentioned earlier stated that he used Hugo + a theme called Blowfish (which ofc doesn't look like the theme he had). It's understandable given the comment was a year ago, maybe he changed.\
 \
