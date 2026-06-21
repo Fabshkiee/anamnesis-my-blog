@@ -4,7 +4,7 @@ date: 2026-06-21T19:49:00.000+08:00
 description: I never thought I’d actually set up *a* blog, but here we are. This
   is how I brought a completely different SSG theme over to Hugo—and the moments
   I almost gave up entirely.
-draft: true
+draft: false
 tags:
   - Summer
   - College
